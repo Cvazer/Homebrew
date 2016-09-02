@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DnD-Info.iml" filepath="$PROJECT_DIR$/.idea/modules/DnD-Info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DnD-Info_main.iml" filepath="$PROJECT_DIR$/.idea/modules/DnD-Info_main.iml" group="DnD-Info" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DnD-Info_package.iml" filepath="$PROJECT_DIR$/.idea/modules/DnD-Info_package.iml" group="DnD-Info" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DnD-Info_test.iml" filepath="$PROJECT_DIR$/.idea/modules/DnD-Info_test.iml" group="DnD-Info" />
+    </modules>
+  </component>
+</project>
