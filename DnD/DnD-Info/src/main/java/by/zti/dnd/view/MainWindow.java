@@ -178,6 +178,11 @@ public class MainWindow extends Application {
 		NewProfWindow window = new NewProfWindow();
 		window.init();
 	}
+	
+	@FXML
+	public void mapEdit(){
+		
+	}
 
 	public static void saveCurrentSheet() {
 		Serealizator.serealize(current_sheet.get(), "res/sheets/" + current_sheet.get().getToken() + ".chr");
