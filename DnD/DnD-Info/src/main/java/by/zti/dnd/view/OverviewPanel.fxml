@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefWidth="896.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.zti.dnd.view.Overview">
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="58.0" minWidth="8.0" prefWidth="10.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="73.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="137.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="72.0" minWidth="10.0" prefWidth="14.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="88.0" minWidth="10.0" prefWidth="67.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="13.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="69.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="97.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="102.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="72.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="16.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="51.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="45.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="60.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="60.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="61.0" minWidth="10.0" prefWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="37.0" minHeight="0.0" prefHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="26.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="26.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="121.0" minHeight="10.0" prefHeight="64.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="47.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="87.0" minHeight="9.0" prefHeight="48.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="56.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="84.0" minHeight="7.0" prefHeight="38.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="54.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="34.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="149.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="23.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="26.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="33.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="27.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="18.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="12.0" valignment="CENTER" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label text="Name:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="name" text="test_name" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label text="Class &amp; lvl:" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Label fx:id="class_and_level" text="test_class + lvl" GridPane.columnIndex="7" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label text="Race:" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <Label fx:id="race" text="test_race" GridPane.columnIndex="7" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label text="Background:" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+      <Label fx:id="background" text="test_back" GridPane.columnIndex="9" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label text="Experience:" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+      <Label fx:id="expirience" text="test_exp" GridPane.columnIndex="9" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <CheckBox fx:id="inspiration" mnemonicParsing="false" prefHeight="17.0" prefWidth="140.0" text="Inspiration" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <Label text="AC" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+      <Label fx:id="ac" text="ac_test" GridPane.columnIndex="14" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label text="Speed" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+      <Label fx:id="speed" text="speed_test" GridPane.columnIndex="14" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TableView fx:id="statsTable" prefHeight="278.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" GridPane.rowSpan="6">
+         <columns>
+            <TableColumn fx:id="stat_name" prefWidth="76.0" text="Name" />
+            <TableColumn fx:id="stat_value" minWidth="0.0" prefWidth="73.0" text="Value" />
+            <TableColumn fx:id="stat_mod" minWidth="5.0" prefWidth="54.0" text="Mod" />
+         </columns>
+      </TableView>
+      <Label prefHeight="17.0" prefWidth="119.0" text="Stats:" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+      <ListView fx:id="skills" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="6" GridPane.rowIndex="5" GridPane.rowSpan="9" />
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.columnSpan="4" GridPane.rowIndex="10" GridPane.rowSpan="5">
+         <columns>
+            <TableColumn fx:id="save_name" prefWidth="76.0" text="Name" />
+            <TableColumn fx:id="save_mod" prefWidth="72.0" text="Value" />
+            <TableColumn fx:id="save_prof" prefWidth="67.0" text="Prof" />
+         </columns>
+      </TableView>
+      <Label text="Hit dice:" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+      <Label fx:id="hitDice" text="sides" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+      <Label text="Total:" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+      <Label fx:id="hitDiceTotal" text="hd_total" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+      <Label prefHeight="17.0" prefWidth="96.0" text="Current hit dices:" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+      <Label fx:id="hitDiceCurrent" text="hd_current" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+      <Label text="HP Max:" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+      <Label fx:id="hpMax" text="max_hp" GridPane.columnIndex="12" GridPane.rowIndex="8" />
+      <Label text="HP" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+      <Label fx:id="hpCurrent" text="hp_test" GridPane.columnIndex="14" GridPane.rowIndex="8" />
+      <ProgressBar fx:id="hp_bar" prefHeight="18.0" prefWidth="248.0" progress="0.0" GridPane.columnIndex="11" GridPane.columnSpan="4" GridPane.rowIndex="9" />
+      <Label text="HP rolled:" GridPane.columnIndex="12" GridPane.rowIndex="7" />
+      <Label fx:id="hpRolled" text="hp_rolled" GridPane.columnIndex="13" GridPane.rowIndex="7" />
+      <Label text="Gold:" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+      <Label text="Silver:" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+      <Label text="Copper:" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+      <Label fx:id="gold" text="gp" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+      <Label fx:id="silver" text="sp" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+      <Label fx:id="copper" text="cp" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+      <Label text="Skils:" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+      <Label text="Weight" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+      <Label fx:id="weight" text="wight_test" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+      <Label text="Prof score" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+      <Label fx:id="prof_score" text="score" GridPane.columnIndex="14" GridPane.rowIndex="4" />
+   </children>
+</GridPane>

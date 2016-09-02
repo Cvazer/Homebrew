@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin:'application'
+apply from: "http://dl.bintray.com/content/shemnon/javafx-gradle/8.1.1/javafx.plugin"
+
+mainClassName = "by.zti.dnd.view.MainWindow"
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+javafx{
+	mainClass 'by.zti.dnd.view.MainWindow'
+	embedLauncher = false
+	installSystemWide = false
+    menu = true
+    shortcut = true
+}
+
+sourceSets {
+  main {
+    resources {
+        srcDirs = ["src/main/java"]
+        includes = ["**/*.fxml"]
+    }
+  }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'by.zti.dnd.view.MainWindow'
+    }
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    testCompile 'junit:junit:4.12'
+   	compile group: 'org.apache.poi', name: 'poi', version: '3.9'
+	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
+   	compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
+   	compile group: 'org.json', name: 'json', version: '20160212'
+   	compile group: 'org.jsoup', name: 'jsoup', version: '1.9.2'
+}

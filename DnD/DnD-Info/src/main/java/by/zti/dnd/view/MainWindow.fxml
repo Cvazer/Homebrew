@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.zti.dnd.view.MainWindow">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <Menu mnemonicParsing="false" text="Sheets...">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#newSheet" text="New sheet" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Traits...">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#newTrait" text="New trait" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Items...">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#newItem" text="New Item" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Skills...">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#newSkill" text="New skill" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Profs...">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#newProf" text="New Prof" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tools">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Map" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.1838810641627543" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <BorderPane>
+               <center>
+                  <TabPane fx:id="tabPaneDM" BorderPane.alignment="CENTER">
+                     <tabs>
+                        <Tab fx:id="sheets" closable="false" text="Sheets" />
+                        <Tab fx:id="skills" closable="false" text="Skills" />
+                        <Tab fx:id="profs" closable="false" text="Profs" />
+                        <Tab fx:id="traits" closable="false" text="Traits" />
+                        <Tab fx:id="items" closable="false" text="Items" />
+                     </tabs>
+                  </TabPane>
+               </center>
+            </BorderPane>
+            <BorderPane>
+               <center>
+                  <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                    <tabs>
+                      <Tab fx:id="overview" text="Overview" />
+                      <Tab fx:id="inventory" text="Inventory" />
+                        <Tab fx:id="traitsDM" text="Traits" />
+                        <Tab fx:id="profsDM" text="Profs" />
+                    </tabs>
+                  </TabPane>
+               </center>
+            </BorderPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>
