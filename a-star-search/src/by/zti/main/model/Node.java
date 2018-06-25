@@ -3,7 +3,7 @@ package by.zti.main.model;
 import java.awt.*;
 
 public class Node {
-    public static final int SIZE = 100;
+    public static final int SIZE = 50;
     public static final int MOVE = 10;
 
     private int x, y, g, f, h;
@@ -37,7 +37,7 @@ public class Node {
         if(this.g!=0){g.drawString(String.valueOf(this.g), (x * SIZE) + 2, (y * SIZE) + 22);}
         g.setColor(Color.GRAY);
         if(this.g!=0){g.drawString(String.valueOf(f), (x * SIZE) - 5 + SIZE/2, (y * SIZE) + 8 + SIZE/2);}
-        g.setColor(Color.GRAY);
+        g.setColor(Color.BLUE);
         if(path){g.fillOval((x * SIZE) + SIZE/2 - SIZE/8, (y * SIZE) + SIZE/2 - SIZE/8, SIZE/4, SIZE/4);}
     }
 

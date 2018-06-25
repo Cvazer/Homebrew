@@ -14,7 +14,7 @@ import static by.zti.main.model.Node.MOVE;
 import static by.zti.main.model.Node.SIZE;
 
 public class Main {
-    private static Node[][] nodes = new Node[7][7];
+    private static Node[][] nodes = new Node[12][12];
 
     private static Node start;
     private static Node end;
@@ -26,7 +26,7 @@ public class Main {
 
     public static void main(String[] args) {
         frame = new JFrame("A Star Test");
-        frame.setSize(717, 740);
+        frame.setSize(565, 590);
         frame.setResizable(true);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
@@ -45,11 +45,11 @@ public class Main {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 if(e.getButton()==MouseEvent.BUTTON1){
-                    setStart(nodes[e.getX()/100][e.getY()/100]);
+                    setStart(nodes[e.getX()/50][e.getY()/50]);
                     frame.repaint();
                 }
                 if(e.getButton()==MouseEvent.BUTTON3){
-                    setEnd(nodes[e.getX()/100][e.getY()/100]);
+                    setEnd(nodes[e.getX()/50][e.getY()/50]);
                     frame.repaint();
                 }
             }
@@ -102,16 +102,70 @@ public class Main {
     }
 
     private static void collide() {
-        nodes[1][2].setCollide(true);
-        nodes[2][2].setCollide(true);
-        nodes[3][2].setCollide(true);
+        nodes[0][3].setCollide(true);
+        nodes[0][4].setCollide(true);
+        nodes[0][5].setCollide(true);
+        nodes[0][6].setCollide(true);
+        nodes[0][7].setCollide(true);
+        nodes[1][3].setCollide(true);
+        nodes[1][7].setCollide(true);
+        nodes[1][8].setCollide(true);
+        nodes[1][9].setCollide(true);
+        nodes[1][11].setCollide(true);
+        nodes[2][3].setCollide(true);
+        nodes[2][5].setCollide(true);
+        nodes[2][11].setCollide(true);
+        nodes[3][3].setCollide(true);
+        nodes[3][5].setCollide(true);
+        nodes[3][7].setCollide(true);
+        nodes[3][8].setCollide(true);
+        nodes[3][9].setCollide(true);
+        nodes[3][11].setCollide(true);
+        nodes[4][5].setCollide(true);
+        nodes[4][9].setCollide(true);
+        nodes[4][11].setCollide(true);
         nodes[5][1].setCollide(true);
         nodes[5][2].setCollide(true);
         nodes[5][3].setCollide(true);
-        nodes[5][4].setCollide(true);
-        nodes[4][4].setCollide(true);
-        nodes[3][4].setCollide(true);
-        nodes[2][4].setCollide(true);
+        nodes[5][5].setCollide(true);
+        nodes[5][7].setCollide(true);
+        nodes[5][11].setCollide(true);
+        nodes[6][5].setCollide(true);
+        nodes[6][7].setCollide(true);
+        nodes[6][8].setCollide(true);
+        nodes[6][11].setCollide(true);
+        nodes[7][0].setCollide(true);
+        nodes[7][2].setCollide(true);
+        nodes[7][3].setCollide(true);
+        nodes[7][4].setCollide(true);
+        nodes[7][5].setCollide(true);
+        nodes[7][7].setCollide(true);
+        nodes[7][11].setCollide(true);
+        nodes[8][0].setCollide(true);
+        nodes[8][7].setCollide(true);
+        nodes[8][9].setCollide(true);
+        nodes[8][11].setCollide(true);
+        nodes[9][0].setCollide(true);
+        nodes[9][1].setCollide(true);
+        nodes[9][2].setCollide(true);
+        nodes[9][3].setCollide(true);
+        nodes[9][4].setCollide(true);
+        nodes[9][5].setCollide(true);
+        nodes[9][6].setCollide(true);
+        nodes[9][7].setCollide(true);
+        nodes[9][9].setCollide(true);
+        nodes[9][11].setCollide(true);
+        nodes[10][1].setCollide(true);
+        nodes[10][9].setCollide(true);
+        nodes[10][11].setCollide(true);
+        nodes[11][1].setCollide(true);
+        nodes[11][2].setCollide(true);
+        nodes[11][3].setCollide(true);
+        nodes[11][5].setCollide(true);
+        nodes[11][6].setCollide(true);
+        nodes[11][7].setCollide(true);
+        nodes[11][8].setCollide(true);
+        nodes[11][9].setCollide(true);
     }
 
     private static void create() {
